@@ -1,0 +1,15 @@
+# Template file for 'denise'
+pkgname=denise
+version=2.9
+revision=1
+build_style=cmake
+hostmakedepends="pkg-config"
+makedepends="freetype-devel gtk+3-devel lame-devel libX11-devel libXext-devel
+ libXfixes-devel libopenal-devel libusb-devel libxcb-devel libxkbcommon-devel
+ pulseaudio-devel"
+short_desc="Commodore 64 and Amiga emulator"
+maintainer="Freddy <fdziarmagowski@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/piciji/denise"
+distfiles="https://github.com/piciji/denise/archive/refs/tags/v${version}.tar.gz"
+checksum=d72d5a989ff4f62dd200964bb76ead8f6f5a2993be3e121085942e7093a5b023

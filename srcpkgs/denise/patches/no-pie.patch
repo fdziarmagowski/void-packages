@@ -1,0 +1,11 @@
+--- a/program/CMakeLists.txt
++++ b/program/CMakeLists.txt
+@@ -181,8 +181,6 @@
+     if (CMAKE_SYSTEM_NAME MATCHES "BSD")
+         # otherwise CMAKE removes runtime paths when installing to final location, check binary with ldd command to see assigned shared libs
+         set_target_properties(${PROJECT_NAME} PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+-    else()
+-        target_link_libraries(${PROJECT_NAME} PUBLIC -no-pie)
+     endif()
+ endif()
+ 
